@@ -5,7 +5,7 @@ Created on Mon May 31 21:44:19 2021
 @author: Thiago
 """
 
-from dados import *
+from calculo_mk import *
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.dates import DayLocator, HourLocator, DateFormatter, drange
@@ -433,91 +433,34 @@ plt.savefig('Multinivel_ph.png', bbox_inches='tight', dpi=300)
 
 ##TESTE MANN KENDALL
 
-import pymannkendall as mk
-
 #tendência pH - conjuntos
-
-mk.original_test(dados_ph['PMI-02'])
-mk.original_test(dados_ph['PMI-04'])
-mk.original_test(dados_ph['PMI-08'])
-mk.original_test(dados_ph['PMI-15'])
-mk.original_test(dados_ph['PMI-20'])
-mk.original_test(dados_ph['PMI-21'])
+tendencia_ph()
 
 #tendência acidez - conjuntos
-
-mk.original_test(dados_acidez['PMI-02'])
-mk.original_test(dados_acidez['PMI-04'])
-mk.original_test(dados_acidez['PMI-08'])
-mk.original_test(dados_acidez['PMI-15'])
-mk.original_test(dados_acidez['PMI-20'])
-mk.original_test(dados_acidez['PMI-21'])
-
+tendencia_acidez()
 
 #tendência alumínio - conjuntos
-
-mk.original_test(dados_aluminio['PMI-02'])
-mk.original_test(dados_aluminio['PMI-04'])
-mk.original_test(dados_aluminio['PMI-08'])
-mk.original_test(dados_aluminio['PMI-15'])
-mk.original_test(dados_aluminio['PMI-20'])
-mk.original_test(dados_aluminio['PMI-21'])
+tendencia_aluminio()
 
 #tendência ferro - conjuntos
+tendencia_ferro()
 
-mk.original_test(dados_ferro['PMI-02'])
-mk.original_test(dados_ferro['PMI-04'])
-mk.original_test(dados_ferro['PMI-08'])
-mk.original_test(dados_ferro['PMI-15'])
-mk.original_test(dados_ferro['PMI-20'])
-mk.original_test(dados_ferro['PMI-21'])
-
-#tendência ferro - conjuntos
-
-mk.original_test(dados_manganes['PMI-02'])
-mk.original_test(dados_manganes['PMI-04'])
-mk.original_test(dados_manganes['PMI-08'])
-mk.original_test(dados_manganes['PMI-15'])
-mk.original_test(dados_manganes['PMI-20'])
-mk.original_test(dados_manganes['PMI-21'])
-
+#tendência manganês - conjuntos
+tendencia_manganes()
 
 #tendência sulfato - conjuntos
-
-mk.original_test(dados_sulfato['PMI-02'])
-mk.original_test(dados_sulfato['PMI-04'])
-mk.original_test(dados_sulfato['PMI-08'])
-mk.original_test(dados_sulfato['PMI-15'])
-mk.original_test(dados_sulfato['PMI-20'])
-mk.original_test(dados_sulfato['PMI-21'])
+tendencia_sulfato()
 
 #   MULTINÍVEIS
 
 #tendência pH - multiníveis
-
-mk.original_test(dados_ph['PP-01S'])
-mk.original_test(dados_ph['PP-01R'])
-mk.original_test(dados_ph['PP-02S'])
-mk.original_test(dados_ph['PP-02R'])
-
+tendencia_mn_ph()
 
 #tendência acidez - multiníveis
-
-mk.original_test(dados_acidez['PP-01S'])
-mk.original_test(dados_acidez['PP-01R'])
-mk.original_test(dados_acidez['PP-02S'])
-mk.original_test(dados_acidez['PP-02R'])
+tendencia_mn_acidez()
 
 #tendência aluminio - multiníveis
-
-mk.original_test(dados_aluminio['PP-01S'])
-mk.original_test(dados_aluminio['PP-01R'])
-mk.original_test(dados_aluminio['PP-02S'])
-mk.original_test(dados_aluminio['PP-02R'])
+tendencia_mn_aluminio()
 
 #tendência  ferro - multiníveis
-
-mk.original_test(dados_ferro['PP-01S'])
-mk.original_test(dados_ferro['PP-01R'])
-mk.original_test(dados_ferro['PP-02S'])
-mk.original_test(dados_ferro['PP-02R'])
+tendencia_mn_ferro()
