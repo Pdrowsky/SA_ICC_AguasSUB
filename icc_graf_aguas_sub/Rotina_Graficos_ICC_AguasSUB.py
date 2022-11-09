@@ -16,59 +16,136 @@ diretorio = os.chdir(r'P:\PETROBRAS-0902-ICC-Qualidade da Água 2021\BancoDados\
 
 
 #Plota gráficos Nível
-ax=dados_nivel.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Nível')
+ax=dados_nivel.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                                 style=['.-', '.-', '.-','.-','.-','.-','.-',
+                                        '.-','.-','.-','.-','.-'],
+                                 ylabel='Nível')
 plt.savefig('Serie_nivel1.png', bbox_inches='tight')
-ax=dados_nivel.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Nível')
+ax=dados_nivel.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                                  style=['.-', '.-', '.-','.-','.-','.-','.-',
+                                         '.-','.-','.-','.-','.-'],
+                                  ylabel='Nível')
 plt.savefig('Serie_nivel2.png', bbox_inches='tight')
-ax=dados_nivel.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Nível')
+ax=dados_nivel.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                                  style=['.-', '.-', '.-','.-','.-','.-','.-',
+                                         '.-','.-','.-','.-','.-'],
+                                  ylabel='Nível')
 plt.savefig('Serie_nivel3.png', bbox_inches='tight')
 
 #Plota gráficos Alumínio
-ax=dados_aluminio.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Alumínio (mg/L)')
+ax=dados_aluminio.iloc[:,1:13].plot(subplots=True,layout=(12,3),
+                                    figsize=(20,40), style=['.-', '.-', '.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-'],
+                                    ylabel='Alumínio (mg/L)')
 plt.savefig('Serie_Aluminio1.png', bbox_inches='tight')
-ax=dados_aluminio.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Alumínio (mg/L)')
+ax=dados_aluminio.iloc[:,14:26].plot(subplots=True,layout=(12,3),
+                                    figsize=(20,40), style=['.-', '.-', '.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-'],
+                                     ylabel='Alumínio (mg/L)')
 plt.savefig('Serie_Aluminio2.png', bbox_inches='tight')
-ax=dados_aluminio.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Alumínio (mg/L)')
+ax=dados_aluminio.iloc[:,27:35].plot(subplots=True,layout=(12,3),
+                                    figsize=(20,40), style=['.-', '.-', '.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-'],
+                                     ylabel='Alumínio (mg/L)')
 plt.savefig('Serie_Aluminio3.png', bbox_inches='tight')
 
 #Plota gráficos Ferro
-ax=dados_ferro.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Ferro (mg/L)')
+ax=dados_ferro.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                                 style=['.-', '.-', '.-','.-','.-','.-','.-',
+                                        '.-','.-','.-','.-','.-'],
+                                 ylabel='Ferro (mg/L)')
 plt.savefig('Serie_ferro1.png', bbox_inches='tight')
-ax=dados_ferro.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Ferro (mg/L)')
+ax=dados_ferro.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                                  style=['.-', '.-', '.-','.-','.-','.-','.-',
+                                         '.-','.-','.-','.-','.-'],
+                                  ylabel='Ferro (mg/L)')
 plt.savefig('Serie_ferro2.png', bbox_inches='tight')
-ax=dados_ferro.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Ferro (mg/L)')
+ax=dados_ferro.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                                  style=['.-', '.-', '.-','.-','.-','.-','.-',
+                                         '.-','.-','.-','.-','.-'],
+                                  ylabel='Ferro (mg/L)')
 plt.savefig('Serie_ferro3.png', bbox_inches='tight')
 
 #Plota gráficos Manganes
-ax=dados_manganes.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Manganês (mg/L)')
+ax=dados_manganes.iloc[:,1:13].plot(subplots=True,layout=(12,3),
+                                    figsize=(20,40), style=['.-', '.-', '.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-'],
+                                    ylabel='Manganês (mg/L)')
 plt.savefig('Serie_manganes1.png', bbox_inches='tight')
-ax=dados_manganes.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Manganês (mg/L)')
+ax=dados_manganes.iloc[:,14:26].plot(subplots=True,layout=(12,3),
+                                    figsize=(20,40), style=['.-', '.-', '.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-'],
+                                     ylabel='Manganês (mg/L)')
 plt.savefig('Serie_manganes2.png', bbox_inches='tight')
-ax=dados_manganes.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Manganês (mg/L)')
+ax=dados_manganes.iloc[:,27:35].plot(subplots=True,layout=(12,3),
+                                    figsize=(20,40), style=['.-', '.-', '.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-'],
+                                     ylabel='Manganês (mg/L)')
 plt.savefig('Serie_manganes3.png', bbox_inches='tight')
 
 #Plota gráficos Acidez
-ax=dados_acidez.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Acidez Total (mg/L)')
+ax=dados_acidez.iloc[:,1:13].plot(subplots=True,layout=(12,3),
+                                  figsize=(20,40), style=['.-', '.-', '.-','.-',
+                                                          '.-','.-','.-','.-',
+                                                          '.-','.-','.-','.-'],
+                                  ylabel='Acidez Total (mg/L)')
 plt.savefig('Serie_acidez1.png', bbox_inches='tight')
-ax=dados_acidez.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Acidez Total (mg/L)')
+ax=dados_acidez.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                                   style=['.-', '.-', '.-','.-','.-','.-','.-',
+                                          '.-','.-','.-','.-','.-'],
+                                   ylabel='Acidez Total (mg/L)')
 plt.savefig('Serie_acidez2.png', bbox_inches='tight')
-ax=dados_acidez.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Acidez Total (mg/L)')
+ax=dados_acidez.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                                   style=['.-', '.-', '.-','.-','.-','.-','.-',
+                                          '.-','.-','.-','.-','.-'],
+                                   ylabel='Acidez Total (mg/L)')
 plt.savefig('Serie_acidez3.png', bbox_inches='tight')
 
 #Plota gráficos Sulfato
-ax=dados_sulfato.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Sulfato (mg/L)')
+ax=dados_sulfato.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                                   style=['.-', '.-', '.-','.-','.-','.-','.-',
+                                          '.-','.-','.-','.-','.-'],
+                                   ylabel='Sulfato (mg/L)')
 plt.savefig('Serie_sulfato1.png', bbox_inches='tight')
-ax=dados_sulfato.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Sulfato (mg/L)')
+ax=dados_sulfato.iloc[:,14:26].plot(subplots=True,layout=(12,3),
+                                    figsize=(20,40), style=['.-', '.-', '.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-'],
+                                    ylabel='Sulfato (mg/L)')
 plt.savefig('Serie_sulfato2.png', bbox_inches='tight')
-ax=dados_sulfato.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='Sulfato (mg/L)')
+ax=dados_sulfato.iloc[:,27:35].plot(subplots=True,layout=(12,3),
+                                    figsize=(20,40), style=['.-', '.-', '.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-','.-','.-','.-',
+                                                            '.-'],
+                                    ylabel='Sulfato (mg/L)')
 plt.savefig('Serie_sulfato3.png', bbox_inches='tight')
 
 #Plota gráficos pH
-ax=dados_ph.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='pH')
+ax=dados_ph.iloc[:,1:13].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                              style=['.-', '.-', '.-','.-','.-','.-','.-','.-',
+                                     '.-','.-','.-','.-'], ylabel='pH')
 plt.savefig('Serie_pH1.png', bbox_inches='tight')
-ax=dados_ph.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='pH')
+ax=dados_ph.iloc[:,14:26].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                               style=['.-', '.-', '.-','.-','.-','.-','.-','.-',
+                                      '.-','.-','.-','.-'], ylabel='pH')
 plt.savefig('Serie_pH2.png', bbox_inches='tight')
-ax=dados_ph.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40), style=['.-', '.-', '.-','.-','.-','.-','.-','.-','.-','.-','.-','.-'], ylabel='pH')
+ax=dados_ph.iloc[:,27:35].plot(subplots=True,layout=(12,3), figsize=(20,40),
+                               style=['.-', '.-', '.-','.-','.-','.-','.-','.-',
+                                      '.-','.-','.-','.-'], ylabel='pH')
 plt.savefig('Serie_pH3.png', bbox_inches='tight')
 
 
