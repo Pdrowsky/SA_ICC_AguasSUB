@@ -4,8 +4,7 @@ from SA_ICC_AguasSUB.icc_graf_aguas_sub.calculo_mk import MannKendall
 
 class ControladorSub:
 
-    def __init__(self, controlador_principal):
-        self.controlador_principal = controlador_principal
+    def __init__(self):
         self.tela_icc_sub = TelaIccSub()
         self.calc_mk = MannKendall
 
