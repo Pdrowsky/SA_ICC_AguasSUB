@@ -1,4 +1,4 @@
-from SA_ICC_AguasSUB.icc_graf_aguas_sup.telaiccsup import TelaIccSup
+from icc_graf_aguas_sup.telaiccsup import TelaIccSup
 
 
 class ControladorSup:

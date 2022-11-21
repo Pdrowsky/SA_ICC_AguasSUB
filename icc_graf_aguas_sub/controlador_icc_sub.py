@@ -1,5 +1,5 @@
-from SA_ICC_AguasSUB.icc_graf_aguas_sub.telaiccsub import TelaIccSub
-from SA_ICC_AguasSUB.icc_graf_aguas_sub.calculo_mk import MannKendall
+from icc_graf_aguas_sub.telaiccsub import TelaIccSub
+from icc_graf_aguas_sub.calculo_mk import MannKendall
 
 
 class ControladorSub:

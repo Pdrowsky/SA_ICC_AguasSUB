@@ -1,14 +1,11 @@
 import openpyxl
 import openpyxl as xl
 
-wb1 = xl.load_workbook('dados_crus.xlsx')
-sheet1 = wb1['Data']
 wb2 = openpyxl.Workbook()
 sheet2 = wb2['Sheet']
 todos_resultados = []
 lista_pontos = []
 lista_parametros = []
-
 
 class ExtrairDados:
     def __init__(self,
@@ -27,6 +24,8 @@ class ExtrairDados:
         self.unidade = unidade
 
     def criar_objetos(self):
+        wb1 = xl.load_workbook(r'C:\Users\Pedro\Desktop\TRABALHANDO\Programação\AguasSub\SA_ICC_AguasSUB\extrair_dados\dados_crus.xlsx')
+        sheet1 = wb1['Data']
         for linha in range(2, sheet1.max_row + 1):
             resultado = ExtrairDados(sheet1.cell(linha, 1).value,
                                      # coluna codigo

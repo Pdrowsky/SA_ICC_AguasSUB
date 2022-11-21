@@ -1,6 +1,6 @@
 import openpyxl
 import pymannkendall as mk
-from SA_ICC_AguasSUB.icc_graf_aguas_sub.dados import *
+from icc_graf_aguas_sub.dados import *
 
 
 def legendar(aba):

@@ -1,17 +1,18 @@
 import sys
-from SA_ICC_AguasSUB.sistema_principal.telaprincipal import TelaPrincipal
-from SA_ICC_AguasSUB.icc_graf_aguas_sub.controlador_icc_sub import ControladorSub
-from SA_ICC_AguasSUB.icc_graf_aguas_sup.controlador_icc_sup import ControladorSup
-from SA_ICC_AguasSUB.extrair_dados.controlador_dados import ControladorDados
+from sistema_principal.telaprincipal import TelaPrincipal
+from icc_graf_aguas_sub.controlador_icc_sub import ControladorSub
+from icc_graf_aguas_sup.controlador_icc_sup import ControladorSup
+#from extrair_dados.controlador_dados import ControladorDados
+from extrair_dados.extrair_dados import ExtrairDados
 
 
 class ControladorPrincipal:
 
     def __init__(self):
         self.tela_principal = TelaPrincipal()
-        self.controlador_icc_sub = ControladorSub
+        self.controlador_icc_sub = ControladorSub()
         self.controlador_icc_sup = ControladorSup(self)
-        self.controlado_dados = ControladorDados
+        self.extracao_dados = ExtrairDados()
 
 
     def inicia(self):
@@ -30,8 +31,10 @@ class ControladorPrincipal:
         self.controlador_icc_sup.mostrar_menu()
 
     def extrair_dados(self):
-        self.controlado_dados.extrair_dados()
-        self.controlado_dados.transcrever_dados()
+        self.extracao_dados.criar_objetos()
+        self.extracao_dados.preparar_parametros()
+        self.extracao_dados.colar_objetos()
+        self.extracao_dados.salvar_planilha()
 
     def finalizar(self):
         sys.exit()
