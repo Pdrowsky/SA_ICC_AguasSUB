@@ -7,6 +7,7 @@ todos_resultados = []
 lista_pontos = []
 lista_parametros = []
 
+
 class ExtrairDados:
     def __init__(self,
                  codigo=str,
@@ -24,7 +25,8 @@ class ExtrairDados:
         self.unidade = unidade
 
     def criar_objetos(self):
-        wb1 = xl.load_workbook(r'C:\Users\Pedro\Desktop\TRABALHANDO\Programação\AguasSub\SA_ICC_AguasSUB\extrair_dados\dados_crus.xlsx')
+        wb1 = xl.load_workbook(
+            r'C:\Users\Pedro\Desktop\TRABALHANDO\Programação\AguasSub\SA_ICC_AguasSUB\extrair_dados\dados_crus.xlsx')
         sheet1 = wb1['Data']
         for linha in range(2, sheet1.max_row + 1):
             resultado = ExtrairDados(sheet1.cell(linha, 1).value,
@@ -45,25 +47,27 @@ class ExtrairDados:
                 lista_parametros.append(resultado.parametro)
 
     def preparar_parametros(self):
+        lista_parametros.sort()
         linha = 2
         for parametro in lista_parametros:
             sheet2.cell(linha, 1).value = parametro
             linha += 1
-
-        coluna = 2
+        coluna = 3
         for ponto in lista_pontos:
             sheet2.cell(1, coluna).value = ponto
             coluna += 1
 
     def colar_objetos(self):
         coluna = 1
-        for col in range(2, len(lista_pontos) + 2):
+        for col in range(3, len(lista_pontos) + 4):
             coluna += 1
             for resultado in todos_resultados:
                 for linha in range(2, sheet2.max_row + 1):
                     if sheet2.cell(linha, 1).value == resultado.parametro and \
                             sheet2.cell(1, coluna).value == resultado.nome:
                         sheet2.cell(linha, coluna).value = resultado.resultado
+                        if sheet2.cell(linha, 2).value == None:
+                            sheet2.cell(linha, 2).value = resultado.unidade
                     else:
                         pass
 
