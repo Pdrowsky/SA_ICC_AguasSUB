@@ -5,8 +5,9 @@ Created on Mon May 31 21:44:19 2021
 @author: Thiago
 """
 
-from calculo_mk import *
+#from calculo_mk import *
 import matplotlib.pyplot as plt
+from extrair_dados.dados_sub import *
 import numpy as np
 from matplotlib.dates import DayLocator, HourLocator, DateFormatter, drange
 import matplotlib.gridspec as gridspec
@@ -434,33 +435,33 @@ plt.savefig('Multinivel_ph.png', bbox_inches='tight', dpi=300)
 ##TESTE MANN KENDALL
 
 #tendência pH - conjuntos
-tendencia_ph()
+#tendencia_ph()
 
 #tendência acidez - conjuntos
-tendencia_acidez()
+#tendencia_acidez()
 
 #tendência alumínio - conjuntos
-tendencia_aluminio()
+#tendencia_aluminio()
 
 #tendência ferro - conjuntos
-tendencia_ferro()
+#tendencia_ferro()
 
 #tendência manganês - conjuntos
-tendencia_manganes()
+#tendencia_manganes()
 
 #tendência sulfato - conjuntos
-tendencia_sulfato()
+#tendencia_sulfato()
 
 #   MULTINÍVEIS
 
 #tendência pH - multiníveis
-tendencia_mn_ph()
+#tendencia_mn_ph()
 
 #tendência acidez - multiníveis
-tendencia_mn_acidez()
+#tendencia_mn_acidez()
 
 #tendência aluminio - multiníveis
-tendencia_mn_aluminio()
+#tendencia_mn_aluminio()
 
 #tendência  ferro - multiníveis
-tendencia_mn_ferro()
+#tendencia_mn_ferro()

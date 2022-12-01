@@ -1,12 +1,12 @@
 from icc_graf_aguas_sub.telaiccsub import TelaIccSub
-from icc_graf_aguas_sub.calculo_mk import MannKendall
+from icc_graf_aguas_sub.calculo_mk_sub import MannKendallSub
 
 
 class ControladorSub:
 
     def __init__(self):
         self.tela_icc_sub = TelaIccSub()
-        self.calc_mk = MannKendall
+        self.calc_mk = MannKendallSub
 
     def mostrar_menu(self):
         opcoes = {0: self.sair, 1: self.plotar_mk, 2: self.plotar_outro,

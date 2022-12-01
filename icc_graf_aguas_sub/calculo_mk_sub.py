@@ -1,6 +1,6 @@
 import openpyxl
 import pymannkendall as mk
-from icc_graf_aguas_sub.dados import *
+from extrair_dados.dados_sub import *
 
 
 def legendar(aba):
@@ -10,10 +10,17 @@ def legendar(aba):
     aba.cell(1, 4).value = 'p-valor'
     aba.cell(1, 5).value = 'Score Mann-Kendall (s)'
 
-class MannKendall:
+class MannKendallSub:
     def __init__(self, lista_pocos = []):
         self.__lista = lista_pocos
 
+    @property
+    def lista_pocos(self):
+        return self.__lista
+
+    @lista_pocos.setter
+    def lista_pocos(self, lista_pocos):
+        self.__lista = lista_pocos
 
     # tendência pH - conjuntos
 

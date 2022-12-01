@@ -11,7 +11,7 @@ class ControladorPrincipal:
     def __init__(self):
         self.tela_principal = TelaPrincipal()
         self.controlador_icc_sub = ControladorSub()
-        self.controlador_icc_sup = ControladorSup(self)
+        self.controlador_icc_sup = ControladorSup()
         self.extracao_dados = ExtrairDados()
 
 
